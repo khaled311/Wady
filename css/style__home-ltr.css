@@ -312,6 +312,10 @@ ul {
   margin-right: 10px;
 }
 
+.sideNav > ul .link > i.trans{
+  transform: rotate(90deg)
+}
+
 .sideNav > ul .link:hover {
   color: #2b70d7;
 }
