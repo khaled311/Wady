@@ -520,6 +520,10 @@ ul {
   background-color: #595959;
 }
 
+.links i.rot{
+  transform: rotate(90deg);
+}
+
 @media (max-width: 991px) {
   .links {
     display: none;
