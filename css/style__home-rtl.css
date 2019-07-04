@@ -1038,6 +1038,7 @@ ul {
 }
 
 .overview {
+  margin-top: 35px;
   padding: 37px 0;
   background-color: #595959;
 }
@@ -1048,9 +1049,6 @@ ul {
 }
 
 @media (max-width: 991px) {
-  .overview{
-    margin-top: 35px;
-  }
   .overview .con {
     flex-direction: column;
   }
