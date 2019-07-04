@@ -119,6 +119,24 @@ ul {
   left: 0;
 }
 
+.sideNav .social{
+  margin-top: 25px;
+}
+
+.sideNav a{
+  color: #595959;
+  margin: 0 10px;
+  font-size: 15px;
+}
+
+.sideNav a i{
+  transition: .5s;
+}
+
+.sideNav a i:hover{
+  color: #2b70d7;
+}
+
 .sideNav .opt {
   padding: 20px 40px;
   display: flex;
