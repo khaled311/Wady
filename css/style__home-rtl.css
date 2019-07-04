@@ -129,6 +129,10 @@ ul {
   font-size: 15px;
 }
 
+.sideNav .trig{
+  display: none;
+}
+
 .sideNav a i{
   transition: .5s;
 }

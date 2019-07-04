@@ -129,6 +129,10 @@ ul {
   font-size: 15px;
 }
 
+.sideNav .trig{
+  display: none;
+}
+
 .sideNav a i{
   transition: .5s;
 }
@@ -215,11 +219,11 @@ ul {
 .sideNav > ul .drop .arr-left {
   font-size: 11px;
   transition: .5s;
-  transform: rotate(0deg);
+  transform: rotate(180deg);
 }
 
 .sideNav > ul .drop .arr-left.open {
-  transform: rotate(-90deg);
+  transform: rotate(270deg);
 }
 
 .sideNav > ul .drop .subMenu {
@@ -257,7 +261,7 @@ ul {
 
 .sideNav > ul .drop .subMenu > li > a > button {
   width: 100%;
-  text-align: right;
+  text-align: left;
   color: #8f8f8f;
   font-size: 14px;
   font-family: "frtBold";
@@ -518,10 +522,6 @@ ul {
 
 .links {
   background-color: #595959;
-}
-
-.links i.rot{
-  transform: rotate(90deg);
 }
 
 @media (max-width: 991px) {
