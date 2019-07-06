@@ -841,11 +841,11 @@ ul {
   color: #2b70d7;
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .cus .disc-head > a {
     margin-right: 25px;
   }
-}
+} */
 
 .owl-theme .owl-dots .owl-dot span{
   width: 8px;
