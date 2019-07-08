@@ -11,7 +11,9 @@ $(function() {
 
     // Toggle open
     $(".subMenu > li").on("click", function() {
-        $(this).find(".arr-left").toggleClass("open");
+        $(this).find(".arr-left").addClass("open");
+        $(this).siblings().find(".arr-left").removeClass("open");
+        $(this).siblings().find(".collapse").removeClass("in");
     });
 
 
