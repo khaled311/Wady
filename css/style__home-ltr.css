@@ -109,7 +109,6 @@ ul {
   left: -100%;
   width: 290px;
   height: 100%;
-  overflow: auto;
   background-color: #FFF;
   z-index: 9999;
   transition: .5s;
