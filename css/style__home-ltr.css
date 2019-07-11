@@ -121,6 +121,7 @@ ul {
 
 .sideNav .social{
   margin-top: 25px;
+  display: none;
 }
 
 .sideNav a{
@@ -142,13 +143,13 @@ ul {
 }
 
 .sideNav .opt {
-  padding: 20px 40px;
+  padding: 20px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.sideNav .opt .close1 {
+/* .sideNav .opt .close1 {
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -157,6 +158,12 @@ ul {
   align-items: center;
   justify-content: center;
   color: #2b70d7;
+  cursor: pointer;
+} */
+
+.sideNav .opt .close1 > i{
+  font-size: 25px;
+  color: #dedede;
   cursor: pointer;
 }
 
@@ -192,23 +199,40 @@ ul {
   align-items: center;
   flex-wrap: wrap;
   cursor: pointer;
-  overflow-y: auto;
-  overflow-x: hidden;
+  /* overflow-y: auto;
+  overflow-x: hidden; */
+  /* padding-left: 11px; */
+}
+
+.sideNav > ul .drop:hover{
+  color: #2b70d7;
+}
+
+.sideNav > ul .drop:hover span{
+  color: #2b70d7;
+}
+
+.sideNav > ul .drop > i:first-child{
+  font-size: 16px;
+  margin-left: 12px;
+  transition: .5s;
 }
 
 .sideNav > ul .drop > span {
   margin-right: auto;
-  margin-left: 15px;
-  font-size: 15px;
-  font-family: "frtBlk";
-  flex-grow: 1;
+  margin-left: 10px;
+  font-size: 16px;
+  /* font-family: "frtBlk"; */
+  /* flex-grow: 1; */
   color: #595959;
+  transition: .5s;
 }
 
 .sideNav > ul .drop .arr {
   font-size: 11px;
   transition: .5s;
   transform: rotate(-90deg);
+  transition: .5s;  
 }
 
 .sideNav > ul .drop .arr.open {
@@ -227,15 +251,17 @@ ul {
 
 .sideNav > ul .drop .subMenu {
   width: 100%;
-  padding: 0 15px;
+  /* padding: 0 15px; */
   display: none;
   overflow: visible;
   height: auto;
+  padding-left: 10px;
 }
 
 .sideNav > ul .drop .subMenu > li {
   position: relative;
-  margin: 10px 0;
+  margin: 5px 0;
+  padding: 5px 0;
   width: 100%;
 }
 
@@ -248,6 +274,8 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0;
+  /* padding: 6px 0; */
 }
 
 .sideNav > ul .drop .subMenu > li > a:focus {
@@ -261,12 +289,18 @@ ul {
 .sideNav > ul .drop .subMenu > li > a > button {
   width: 100%;
   text-align: left;
-  color: #8f8f8f;
-  font-size: 14px;
-  font-family: "frtBold";
+  color: #595959;
+  font-size: 16px;
+  /* font-family: "frtBold"; */
   background-color: transparent;
   border: 0;
   transition: .5s;
+  padding: 3px 0;
+  /* padding-left: 10px; */
+}
+
+.sideNav > ul .drop .subMenu > li > a > button:hover{
+  color: #2b70d7;
 }
 
 .sideNav > ul .drop .subMenu > li > a > button:focus {
@@ -279,8 +313,12 @@ ul {
 
 .sideNav > ul .drop .subMenu > li .sub > li {
   width: 100%;
-  padding: 0 10px;
+  padding: 0;
   margin: 0;
+}
+
+.sideNav > ul .drop .subMenu > li .sub > li > .trig{
+  display: none
 }
 
 .sideNav > ul .drop .subMenu > li .sub > li:not(:last-of-type) a {
@@ -288,15 +326,15 @@ ul {
 }
 
 .sideNav > ul .drop .subMenu > li .sub > li > a {
-  color: #8f8f8f;
-  padding: 6px;
-  font-size: 14px;
+  color: #595959;
+  padding: 6px 0;
+  font-size: 16px;
   display: block;
   transition: .5s;
 }
 
 .sideNav > ul .drop .subMenu > li .sub > li > a:hover {
-  color: #000;
+  color: #2b70d7;
 }
 
 .sideNav > ul .link {
@@ -310,6 +348,7 @@ ul {
 
 .sideNav > ul .link > i {
   margin-right: 10px;
+  transition: .5s;    
 }
 
 .sideNav > ul .link > i.trans{
