@@ -149,18 +149,6 @@ ul {
   justify-content: space-between;
 }
 
-/* .sideNav .opt .close1 {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #2b70d7;
-  cursor: pointer;
-} */
-
 .sideNav .opt .close1 > i{
   font-size: 25px;
   color: #dedede;
@@ -190,7 +178,7 @@ ul {
   width: 100%;
 }
 
-.sideNav > ul > li:not(:first-child) {
+.sideNav > ul > li:not(:last-child) {
   border-bottom: 1px solid #ededed;
 }
 
@@ -199,9 +187,6 @@ ul {
   align-items: center;
   flex-wrap: wrap;
   cursor: pointer;
-  /* overflow-y: auto;
-  overflow-x: hidden; */
-  /* padding-left: 11px; */
 }
 
 .sideNav > ul .drop:hover{
@@ -222,8 +207,7 @@ ul {
   margin-right: auto;
   margin-left: 10px;
   font-size: 16px;
-  /* font-family: "frtBlk"; */
-  /* flex-grow: 1; */
+  flex-grow: 1;
   color: #595959;
   transition: .5s;
 }
@@ -251,17 +235,14 @@ ul {
 
 .sideNav > ul .drop .subMenu {
   width: 100%;
-  /* padding: 0 15px; */
+  padding: 9px 15px;
   display: none;
   overflow: visible;
   height: auto;
-  padding-left: 10px;
 }
 
 .sideNav > ul .drop .subMenu > li {
   position: relative;
-  margin: 5px 0;
-  padding: 5px 0;
   width: 100%;
 }
 
@@ -270,12 +251,15 @@ ul {
 }
 
 .sideNav > ul .drop .subMenu > li > a {
-  color: #595959;
+  color: #9a9a9a;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0;
-  /* padding: 6px 0; */
+}
+
+.sideNav > ul .drop .subMenu > li > a.en{
+  padding: 7px 0;
 }
 
 .sideNav > ul .drop .subMenu > li > a:focus {
@@ -289,14 +273,12 @@ ul {
 .sideNav > ul .drop .subMenu > li > a > button {
   width: 100%;
   text-align: left;
-  color: #595959;
+  color: #9a9a9a;
   font-size: 16px;
-  /* font-family: "frtBold"; */
   background-color: transparent;
   border: 0;
   transition: .5s;
-  padding: 3px 0;
-  /* padding-left: 10px; */
+  padding: 6px;
 }
 
 .sideNav > ul .drop .subMenu > li > a > button:hover{
@@ -326,9 +308,10 @@ ul {
 }
 
 .sideNav > ul .drop .subMenu > li .sub > li > a {
-  color: #595959;
+  color: #777;
   padding: 6px 0;
-  font-size: 16px;
+  font-size: 14px;
+  margin-left: 20px;
   display: block;
   transition: .5s;
 }
